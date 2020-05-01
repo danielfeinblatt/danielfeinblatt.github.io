@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css2?family=Righteous&display=swap);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#main {
+background-image: url("https://www.joinusonline.net/pub/media/catalog/product/p/t/pts-197_gradien_blue.jpg");
+background-size: cover;
+background-repeat: x-repeat;
+background-position: center;
+color: blue;
+height: 500px;
+}
+
+h1 {
+text-align: center;
+}
+
+ul.navbar {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: gray;
+position: sticky;
+top: 0;
+}
+
+ul.navbar li {
+float: left;
+}
+
+ul.navbar #about {
+    float: right;
+}
+
+ul.navbar li a {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 26px;
+ text-decoration: none;
+ font-family: "Righteous";
+
+}
+
+.imglinks {
+    height: 100px;
+    width: 100px;
+}
+
+ul.navbar li a:hover {
+ background-color: #333;
+}
+
+
+div {
+color: red;
+}
