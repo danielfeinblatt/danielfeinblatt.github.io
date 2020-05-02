@@ -2,10 +2,12 @@
 
 * {
     box-sizing: border-box;
+    
 }
 
 body {
     margin: 0;
+    background-color: white;
 }
 
 .hero-image {
@@ -28,13 +30,10 @@ height: 500px;
 z-index: -1;
 }
 
-#about {
-    background-image: linear-gradient(red, yellow);
-}
 
 h1 {
 text-align: center;
-font-family: Righteous;
+font-family: ;
 
 }
 ul.navbar {
@@ -88,14 +87,14 @@ color: red;
     font-size: 20px;
     cursor: pointer;
     color: white;
-    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .containerTab {
     margin: 10px 30px;
     padding: 10px;
     color: white;
-    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .grid {
