@@ -8,6 +8,23 @@ body {
     margin: 0;
 }
 
+.hero-image {
+    background: url(GraduationCap.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
 #main {
 background-image: url("https://www.joinusonline.net/pub/media/catalog/product/p/t/pts-197_gradien_blue.jpg");
 background-size: cover;
@@ -19,16 +36,18 @@ height: 500px;
 
 h1 {
 text-align: center;
-}
 
+}
 ul.navbar {
 list-style-type: none;
 margin: 0;
 padding: 0;
 overflow: hidden;
 background-color: gray;
-position: sticky;
+position: fixed;
+width: 100%;
 top: 0;
+transition: .2s;
 }
 
 ul.navbar li {
@@ -55,7 +74,7 @@ ul.navbar li a {
 }
 
 ul.navbar li a:hover {
- background-color: #333;
+ color: #333;
 }
 
 
