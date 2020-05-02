@@ -9,9 +9,6 @@ body {
 }
 
 .hero-image {
-    background: url(GraduationCap.jpg) no-repeat center;
-    background-size: cover;
-    height: 500px;
     position: relative;
 }
 
@@ -26,16 +23,18 @@ body {
 
 
 #main {
-background-image: url("https://www.joinusonline.net/pub/media/catalog/product/p/t/pts-197_gradien_blue.jpg");
-background-size: cover;
-background-repeat: x-repeat;
-background-position: center;
-color: blue;
+background-image: linear-gradient(blue, white);
 height: 500px;
+z-index: -1;
+}
+
+#about {
+    background-image: linear-gradient(red, yellow);
 }
 
 h1 {
 text-align: center;
+font-family: Righteous;
 
 }
 ul.navbar {
@@ -54,7 +53,7 @@ ul.navbar li {
 float: left;
 }
 
-ul.navbar #about {
+#aboutnav {
     float: right;
 }
 
@@ -80,4 +79,48 @@ ul.navbar li a:hover {
 
 div {
 color: red;
+}
+
+
+.column {
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+}
+
+.containerTab {
+    margin: 10px 30px;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-column-gap: 100px;
+    margin: 0px 100px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.closebutton {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.parallax {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

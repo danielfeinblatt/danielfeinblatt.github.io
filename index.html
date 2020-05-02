@@ -10,7 +10,7 @@
 
  <ul class="navbar" id="topnav">
   <li><a href="#main">Main</a></li>
-  <li id="about"><a href="#about">About Me</a></li>
+  <li id="aboutnav"><a href="#about">About Me</a></li>
   <li><a href="#education">Education</a></li>
   <li><a href="#work">Work Experiences</a></li>
   <li><a href="#selfdev">Self Development</a></li>
@@ -19,26 +19,51 @@
  </ul>
   <!-- will eventually make these into their own html files that way we have multiple pages-->
   <div>
-  <h1 id="main">This is Daniel Feinblatt</h1>
+  <h1>This is Daniel Feinblatt</h1>
   </div>
 
-  <div class="hero-image">
+  <div class="hero-image parallax" id="main">
     <div class="hero-text">
       <h1 style="font-size:50px">I am Daniel Feinblatt</h1>
       <h3>And I am an Engineer</h3>
     </div>
   </div>
 
-  <div id="about">
+  <div id="about" class="parallax">
    <h1>About Me</h1>
-   <p id="thisone" tester()>Changing?</p>
-   <button type="button" onclick="tester()">Tester</button>
+   <div class="grid">
+       <div class="column" onclick="openTab('b1');" style="background:green;">Where I Come From</div>
+       <div class="column" onclick="openTab('b2');" style="background:blue;">Interests and Hobbies</div>
+       <div class="column" onclick="openTab('b3');" style="background:red;">Box 3</div>
+     </div>
+
+     <div id="b1" class="containerTab" style="display: none; background:green;">
+       <span onclick="this.parentElement.style.display = 'none'" class="closebutton">x</span>
+       <h2>Box 2</h2>
+       <p>words about me</p>
+     </div>
+
+     <div id="b2" class="containerTab" style="display: none; background:blue;">
+       <span onclick="this.parentElement.style.display = 'none'" class="closebutton">x</span>
+       <h2>Box 2</h2>
+       <p>words about me</p>
+     </div>
+
+     <div id="b3" class="containerTab" style="display: none; background:red;">
+       <span onclick="this.parentElement.style.display = 'none'" class="closebutton">x</span>
+       <h2>Box 2</h2>
+       <p>words about me</p>
+     </div>
 
   </div>
 
 
   <div id="education">
    <h1>Education</h1>
+
+     
+
+
   </div>
 
   <div id="work">
