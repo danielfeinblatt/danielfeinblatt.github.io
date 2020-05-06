@@ -1,29 +1,191 @@
 <!DOCTYPE html>
-<html>
- <head>
-   <title>Daniel Feinblatt</title>
-   <link rel="stylesheet" type="text/css" href="styles.css">
-   <script src="app.js"></script>
+<html lang="en-US" dir="ltr">
+<head>
+  <title>Daniel Feinblatt Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="cssreset.css">
+   <!--<link rel="stylesheet" type="text/css" href="styles.css">-->
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="utf-8">
+   <meta name="desciption" content="Daniel Feinblatt's first website showcasing himself while applying his skills in
+   HTML, CSS, and JavaScript as he learns them.">
+   <!--<meta name="application-name" content="Learn about Daniel Feinblatt">
+   <meta name="msapplication-TileImage" content="-->
+   <!--<script src="app.js"></script>-->
  </head>
- <body>
 
- <ul class="navbar" id="topnav">
-  <li><a href="#main">Main</a></li>
-  <li id="aboutnav"><a href="#about">About Me</a></li>
-  <li><a href="#education">Education</a></li>
-  <li><a href="#work">Work Experiences</a></li>
-  <li><a href="#selfdev">Self Development</a></li>
-  <li><a href="#contact">Contact Me</a></li>
-  <li><a href="DanielFeinblattResume2020.pdf">Resume</a></li>
- </ul>
-  <!-- will eventually make these into their own html files that way we have multiple pages-->
+<!--****************** Horizontal Navigation Bar **********-->
+<body>
+  <nav>
+    <ul>
+      <li><strong>Home</strong></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="work.html">Work and Volunteering</a></li>
+      <li><a href="enjoyment.html">Enjoyment and Fun</a></li>
+      <li><a href="">Contact Me</a></li>
+      <li><a href="DanielFeinblattResume2020.pdf" target="_blank">Resume</a></li>
+    </ul>
+  </nav>
+<!--have some type of currently involved icon that i can put next to all the things im currently involved in, and if i click on it it takes <menu>
+  to a page that has all the things im currently involved with-->
 
-  <div class="hero-image parallax" id="main">
+
+
+
+<!-- ****************** Contact Me ********************** -->
+    <h2>Want to chat?! Here's how you can find me!</h2>
+    <h3><a href="https://www.linkedin.com/in/danielfeinblatt/" target="_blank">Connect with me on LinkedIn</a></h3>
+    <h3>Find me on <a href="https://www.facebook.com/daniel.feinblatt.39" target="_blank">Facebook</a></h3>
+    <h3>Use this form to send me an email!</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <nav role="navigation" aria-label="primary navigation">
+    <ul class="navbar" id="topnav">
+      <li><a href="#main">Main</a></li>
+      <li id="aboutnav"><a href="#about">About Me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#work">Work Experiences</a></li>
+      <li><a href="#selfdev">Self Development</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+      <li><a href="DanielFeinblattResume2020.pdf">Resume</a></li>
+    </ul>
+ </nav>
+
+<!--  <div class="hero-image parallax" id="main">
     <div class="hero-text">
       <h1 style="font-size:50px">---Daniel Feinblatt---</h1>
     </div>
   </div>
+-->
+
+  <section>
+    <h1>Education</h1>
+    <h2>Area of Study</h2>
+            <strong>Double Major</strong>
+            <p class="major" id="ece">Electrical and Computer Engineering</p>
+            <p class="major" id="cs">Computer Science</p>
+            <h2>GPA: 3.84</h2>
+            <aside>
+                <h3>Why these majors?</h3>
+                <p>Hardware, software, logic, creativity, collaboration etc.</p>
+            </aside>
+
+        </section>
+        <section>
+            Courses completed by semester:
+            <ul>
+                <li>Fall 2019</li>
+                <a href="" alt="learn more">Learn more about my first semester courses</a> <!--make page with courses i've taken broken down by semester
+                                                                                            and tidbits about what i learned/worked on/how i performed in the course, photos etc.-->
+                <ul>
+                    <li>EGR 101: Engineering Design and Communication
+                        <article>Small course description/accomplishments/links to more info?</article>
+                    </li>
+                    <li>EGR 103: Computational Methods for Engineers
+                        <article>Small course description/accomplishments/links to more info??</article>
+                    </li>
+                    <li>Math 212: Multivariable Calculus
+                        <article>Small course description/accomplishments/links to more info?</article>
+                    </li>
+                    <li>IE 290: Innovator's Workshop
+                        <article>Small course description/accomplishments/links to more info?</article>
+                    </li>
+                </ul>
+                <li>Spring 2020</li>
+                <a href="" alt="learn more">Learn more about my Second semester classes</a>
+                <ul>
+                    <li>ECE 110: Fundamentals of Electrical and Computer Engineering
+                        <article>Small course description/accomplishments/links to more info?</article>
+                    </li>
+                    <li>CS 201: Data Structures and Algorithms
+                        <article>Small course description/accomplishments/links to more info??</article>
+                    </li>
+                    <li>Math 216: Linear Algebra and Differential Equations
+                        <article>Small course description/accomplishments/links to more info?</article>
+                    </li>
+                    <li>Writing 101: Climate Crisis
+                        <article>Small course description/accomplishments/links to more info?</article>
+                    </li>
+                </ul>
+            </ul>
+        </section>
+        <section class="columns2">Projects place, this will have links to projects, pictures, etc.</section>
+      </div>
+  </div>
+
+  <div class="majorsection">
+    <h1>Experience</h1>
+    <section>
+        <h3>Research</h3>
+        <p>Duke Center for Metamaterials and Integrated Plasmonics. Dates: <date>March 2020 - present </date> Click here to learn more about my research</p> <!--two columns side by side with my two research experiences-->
+        <p>New Jersey Institute of Technology Biophysics Research Lab. <date>June 2017 - August 2017</date> Click here to learn more</p>
+        <h3>Work Experience</h3>
+        <p>Refereeing, Jersey Mike's</p>
+      </section>
+  </div>
+
+  <div class="majorsection">
+    <h1>Volunteering</h1>
+      <p>Talk about why volunteering and community involvement is so important to me</p>
+      <p>Daughters of Israel</p>
+      <p>USO</p>
+      <p>Tutoring</p>
+  </div>
+
+  <div class="majorsection">
+    <h1>Skills</h1>
+      <h3>Languages</h3>
+        <p>list them</p>
+        <p>self deveopment, ie learning new things and how im doing that.</p>
+        <h5>C# and Unity</h5>
+          <p>been learning it for my lab, also making my own basic video game from scratch</p>
+        <h5>HTML, CSS, JavaScript</h5>
+          <p>using quarantine to self teach. using w3 scools and duke coursera website, show certificate of completion</p>
+      <h3>Software</h3>
+        <p>Git, TinkerCAD, Fusion 360, workable comprehension of MATLAB</p>
+      <h3>ECE stuffs</h3>
+        <p>Circuit analysis, inductors, resistor, capacitors, op-amps, filters...</p>
+  </div>
+
+  <div class="majorsection">
+    <h1>About Me</h1>
+      <h3>Where I come From</h3>
+        <p>New Jersey. Grew up my whole life in West Orange.... talk about the town, diversity, etc. why i love it... right outside nyc, people say we are bad drivers, but new yorkers will always be worse</p>
+      <h3>What I do for Fun</h3>
+        <p>Love sports, playing them and watching them. Ice Hockey, archery. soccer</p>
+        <p>Games, all types! Board, card, video....etc.here are some of my favorites</p>
+      <h3>My philosophy</h3>
+        <p>collaboration blah bkah bkah</p>
+        <p>There is always something you can learn from someone else and theres always something you can teach another person</p>
+  </div>
+
+  <div class="majorsection">
+    <h1>Contact me, learn more</h1>
+     <p>Github.....linkedin....email....</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
 
   <div id="about" class="parallax">
    <h1>About Me</h1>
@@ -57,7 +219,7 @@
   <div id="education">
    <h1>Education</h1>
 
-     
+
 
 
   </div>
@@ -73,13 +235,11 @@
   <div id="selfdev">
    <h1>Self Development</h1>
   </div>
-  
+
+
   <footer>
-   <h2 id="contact">Contact Information</h2>
-   <a href="https://github.com/danielfeinblatt" target="_blank">
-    <img class="imglinks" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github Account">
-   </a>
-  
+    <a href="https://github.com/danielfeinblatt" target="_blank">My Github</a>
+    <a href="https://www.linkedin.com/in/danielfeinblatt/" target="_blank">Find me on LinkedIn</a>
   </footer>
 
  </body>

@@ -74,11 +74,6 @@ ul.navbar li a:hover {
 }
 
 
-div {
-color: red;
-}
-
-
 .column {
     padding: 30px;
     text-align: center;
@@ -121,4 +116,52 @@ color: red;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+div {
+    padding: 50px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+
+.majorsection {
+
+}
+
+.columns {
+    border: 1px solid black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+}
+
+.columns1 {
+    border: 1px solid black;
+    position: absolute;
+    left: 200px;
+    width: 100px;
+}
+
+.columns2 {
+    border: 1px solid black;
+    position: absolute;
+    left: 300px;
+    top: 0px;
+    width: 150px;
+}
+
+.middle {
+    align-self: center;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
 }
