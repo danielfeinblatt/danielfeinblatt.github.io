@@ -1,0 +1,218 @@
+/*
+COLOR PALETTE
+https://coolors.co/0e1116-2a628f-878c8f-16324f-f7f7ff
+Dark Purple - #231123
+Lapus Lazuli - #2A628F
+Mindaro - #DBFE87
+Prussian Blue - #16324F
+Ghost White - #F7F7FF
+Dark Gray - #343434
+*/
+
+/* Global styles
+---------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  color:#343434;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+img {
+  width: 300px;
+}
+a {
+  color: #2A628F;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 80px;
+  line-height: 1;
+}
+h2 {
+  font-size: 40px;
+}
+h1, h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+h3 {
+  margin-bottom: 0;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+.divider > section {
+  border-bottom: 1px dashed orange;
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+
+/* Main Page
+---------------------------------*/
+header {
+  background: #2A628F;
+}
+nav {
+  background: #231123;
+  max-width: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: fixed;
+}
+.navigation {
+  list-style-type: none;
+  padding: 0;
+}
+.navigation a {
+  padding: 15px 18px;
+  display: inline-block;
+}
+
+
+
+/* About Me
+---------------------------------*/
+.aboutme {
+  background: #F7F7FF;
+}
+
+/* Education
+---------------------------------*/
+.education {
+  background-image: url(../images/Duke-West-Union.jpg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  color: #F7F7FF;
+}
+.education p {
+  width: 60%;
+}
+.education a {
+  color: #DBFE87;
+}
+.education .btn {
+  color: #DBFE87;
+  background: #343434;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.education .btn:hover {
+  background: rgba(52, 52, 52, 60%);
+}
+
+/* Research
+---------------------------------*/
+.research {
+  background: #DBFE87;
+}
+.research-item {
+  overflow: hidden;
+}
+.research-item img {
+  float: left;
+  margin-right: 20px;
+}
+.research-item h3 {
+  margin-top: 0;
+}
+
+/* Work and Volunteering
+---------------------------------*/
+.work {
+  background: #343434;
+  color: #F7F7FF;
+}
+
+/* Enjoyment and Fun
+---------------------------------*/
+.enjoyment {
+  background: #231123;
+  color: #F7F7FF;
+}
+
+/* Contact Me
+---------------------------------*/
+footer {
+  background: #231123;
+  color: #F7F7FF;
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
+
+/* Resume
+---------------------------------*/
+
+
+/* Responsive
+---------------------------------*/
+@media screen and (min-width: 800px){
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+}
+@media screen and (max-width: 799px){
+  h1 {
+    font-size: 60px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+  }
+  h2 {
+    line-height: 1;
+  }
+}
+@media screen and (min-width: 900px){
+  nav, header, footer {
+      text-align: center;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 899px){
+  .navigation li, .contact-list li {
+    line-height: 1.25;
+  }
+  .navigation a, .contact-list a {
+    padding: 5px;
+  }
+  .content-wrap {
+    padding: 30px 0;
+  }
+}
