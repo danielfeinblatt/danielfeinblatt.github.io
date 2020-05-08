@@ -19,7 +19,7 @@ html {
 }
 body {
   color:#343434;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -70,7 +70,17 @@ h3 {
 /* Main Page
 ---------------------------------*/
 header {
-  background: #2A628F;
+  padding-top: 10px;
+  background-image: url("../images/mainbackground1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .content-wrap {
+  padding: 275px 0;
+  max-width: 60%;
+}
+header .content-wrap h1, header .content-wrap ul {
+  background-color: rgba(255, 255, 255, .5);
 }
 nav {
   background: #231123;
@@ -78,15 +88,31 @@ nav {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  position: fixed;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
 }
-.navigation {
+.navigation, .self-description {
   list-style-type: none;
   padding: 0;
 }
 .navigation a {
   padding: 15px 18px;
   display: inline-block;
+}
+.self-description li {
+  display: inline-block;
+  padding: 0 10px;
+  border-style: solid;
+  border-color: White;
+  border-width: 0 2px;
+  margin: 20px -4px 0;
+  line-height: 1;
+}
+.self-description > li:first-of-type {
+  border-left-style: none;
+}
+.self-description > li:last-of-type {
+  border-right-style: none;
 }
 
 
@@ -146,6 +172,11 @@ nav {
   background: #343434;
   color: #F7F7FF;
 }
+.job-details img {
+  width: 150px;
+  padding-top: 10px;
+
+}
 
 /* Enjoyment and Fun
 ---------------------------------*/
@@ -153,6 +184,7 @@ nav {
   background: #231123;
   color: #F7F7FF;
 }
+
 
 /* Contact Me
 ---------------------------------*/
