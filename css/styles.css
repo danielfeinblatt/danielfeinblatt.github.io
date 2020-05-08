@@ -71,16 +71,12 @@ h3 {
 ---------------------------------*/
 header {
   padding-top: 10px;
-  background-image: url("../images/mainbackground1.png");
+  background-image: url("../images/mainbackground2.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 header .content-wrap {
-  padding: 275px 0;
-  max-width: 60%;
-}
-header .content-wrap h1, header .content-wrap ul {
-  background-color: rgba(255, 255, 255, .5);
+  padding: 250px 0;
 }
 nav {
   background: #231123;
