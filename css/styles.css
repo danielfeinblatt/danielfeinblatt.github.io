@@ -110,7 +110,34 @@ nav {
 .self-description > li:last-of-type {
   border-right-style: none;
 }
-
+.all-grid-container {
+  max-width: 1100px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.grid-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  margin: 25px 0;
+  /* border: solid black 1px; */
+}
+.grid-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-right: 1px black solid;
+}
+.grid-details img {
+  max-width: 75%;
+  border: 1px dashed black;
+  border-radius: 25px;
+}
+.grid-item + .grid-item {
+  border-top: dashed red 2px;
+}
 
 
 /* About Me
