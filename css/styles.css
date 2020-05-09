@@ -122,6 +122,17 @@ nav {
   gap: 50px;
   padding: 10px;
 }
+#courses {
+  grid-template-columns: 1fr 1fr;
+}
+#courses h3 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+#courses h4 {
+  align-self: center;
+  text-align: center;
+}
 .grid-details {
   display: flex;
   flex-direction: column;
@@ -153,9 +164,9 @@ nav {
 }
 
 
-/* About Me
+/* Volunteering
 ---------------------------------*/
-.aboutme {
+.volunteer {
   background: #F7F7FF;
 }
 
