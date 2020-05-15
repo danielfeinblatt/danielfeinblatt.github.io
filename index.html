@@ -1,98 +1,60 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 <head>
-  <link rel="stylesheet" type="text/css" href="css/cssreset.css">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Raleway:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <meta name="description" content="Daniel Feinblatt's first website showcasing himself while applying his skills in
-   HTML, CSS, and JavaScript as he learns them.">
-   <!--<meta name="application-name" content="Learn about Daniel Feinblatt">
-   <meta name="msapplication-TileImage" content="-->
-    <title>Daniel Feinblatt - Duke University Engineering Student</title>
-   <script src="app.js"></script>
- </head>
+	<link rel="stylesheet" type="text/css" href="css/cssreset.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Raleway:400,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="description" content="Daniel Feinblatt's first website showcasing himself while applying his skills in
+				HTML, CSS, and JavaScript as he learns them.">
+	<title>Daniel Feinblatt - Duke University Engineering Student</title>
+	<script src="nav.js"></script>
+</head>
 
 <!-- *****************  Main Navigation  ***************** -->
 <body>
-  <nav>
-    <ul class="navigation">
-      <li><a href="#home-page">Home</a></li>
-      <li><a href="volunteer.html">Volunteering</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="work.html">Work Experience</a></li>
-      <li><a href="athletics.html">Athletics</a></li>
-      <li><a href="#contact-me">Contact Me</a></li>
-      <li><a href="DanielFeinblattResume2020.pdf" target="_blank">Resume</a></li>
-    </ul>
-  </nav>
+	<nav>
+		<ul class="navigation">
+	  		<li><a href="index.html">Home</a></li>
+	  		<li><a href="volunteer.html">Volunteering</a></li>
+	  		<li><a href="education.html">Education</a></li>
+	  		<li><a href="research.html">Research</a></li>
+	  		<li><a href="work.html">Work Experience</a></li>
+	  		<li><a href="athletics.html">Athletics</a></li>
+	  		<li><a href="#contact-me">Contact Me</a></li>
+	  		<li><a href="DanielFeinblattResume2020.pdf" target="_blank">Resume</a></li>
+		</ul>
+	</nav>
 <!--have some type of currently involved icon that i can put next to all the things im currently involved in, and if i click on it it takes <menu>
   to a page that has all the things im currently involved with-->
 
 <!-- *****************  Main Welcome Header  ***************** -->
-<header id="home-page">
-  <div class="content-wrap">
-    <h1>Daniel Feinblatt</h1>
-    <ul class="self-description">
-      <li><h2>Engineer</h2></li>
-      <li><h2>Researcher</h2></li>
-      <li><h2>Innovator</h2></li>
-    </ul>
-  </div>
+<header>
+	<div class="content-wrap">
+		<h1>Daniel Feinblatt</h1>
+    	<ul class="self-description">
+      		<li><h2>Engineer</h2></li>
+      		<li><h2>Researcher</h2></li>
+      		<li><h2>Innovator</h2></li>
+    	</ul>
+  	</div>
 </header>
 
 
 <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
 <footer>
-  <div class="content-wrap">
-    <h2>Let's Keep in Touch!</h2>
-
-    <!-- Social media and contact links. Add or remove any networks. -->
-    <ul id="contact-me" class="contact-list">
-      <li><a href="mailto:danielfeinblatt@gmail.com">danielfeinblatt@gmail.com</a></li>
-      <li><a href="https://danielfeinblatt.github.io/" target="_blank">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/danielfeinblatt/" target="_blank">LinkedIn</a></li>
-    </ul>
-  </div>
+	<h1>Would love to hear from you! Feel free to reach out via email or see what I'm up to on LinkedIn or GitHub.</h1>
+	<ul id="contact-me" class="contact-list">
+  		<li><a href="mailto:danielfeinblatt@gmail.com"><img src="images/email-icon.png" alt=""></a></li>
+  		<li><a href="https://danielfeinblatt.github.io/" target="_blank"><img src="images/github-logo.png" alt=""></a></li>
+  		<li><a href="https://www.linkedin.com/in/danielfeinblatt/" target="_blank"><img src="images/linkedin-logo.png" alt=""></a></li>
+	</ul>
+	<div>
+		Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
+		from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+	</div>
 </footer>
 
-
-
-<!--  <div id="about" class="parallax">
-   <h1>About Me</h1>
-   <div class="grid">
-       <div class="column" onclick="openTab('b1');">Where I Come From</div>
-       <div class="column" onclick="openTab('b2');">Interests and Hobbies</div>
-       <div class="column" onclick="openTab('b3');">Box 3</div>
-     </div>
-
-     <div id="b1" class="containerTab" style="display: none; background:green;">
-       <span onclick="this.parentElement.style.display = 'none'" class="closebutton">x</span>
-       <h2>Box 2</h2>
-       <p>words about me</p>
-     </div>
-
-     <div id="b2" class="containerTab" style="display: none; background:blue;">
-       <span onclick="this.parentElement.style.display = 'none'" class="closebutton">x</span>
-       <h2>Box 2</h2>
-       <p>words about me</p>
-     </div>
-
-     <div id="b3" class="containerTab" style="display: none; background:red;">
-       <span onclick="this.parentElement.style.display = 'none'" class="closebutton">x</span>
-       <h2>Box 2</h2>
-       <p>words about me</p>
-     </div>
-
-  </div>-->
-
-
-<!--  <footer>
-    <a href="https://github.com/danielfeinblatt" target="_blank">My Github</a>
-    <a href="https://www.linkedin.com/in/danielfeinblatt/" target="_blank">Find me on LinkedIn</a>
-  </footer>-->
-
- </body>
+</body>
 </html>

@@ -1,12 +1,8 @@
 /*
 COLOR PALETTE
-https://coolors.co/0e1116-2a628f-878c8f-16324f-f7f7ff
-Dark Purple - #231123
-Lapus Lazuli - #2A628F
-Mindaro - #DBFE87
-Prussian Blue - #16324F
-Ghost White - #F7F7FF
-Dark Gray - #343434
+https://coolors.co/0d1b2a-8b6220-ffe20d-bfd7ea-301934
+Rich Black - #0D1B2A
+Golden
 */
 
 /* Global styles
@@ -20,17 +16,12 @@ html {
 body {
   color:#343434;
   font-family: 'Raleway', sans-serif;
+  font-weight: 600;
   font-size: 18px;
   line-height: 1.5;
 }
 img {
   width: 300px;
-}
-a {
-  color: #2A628F;
-}
-a:hover {
-  text-decoration: none;
 }
 h1 {
   font-size: 80px;
@@ -67,6 +58,57 @@ h3 {
   border-bottom: none;
 }
 
+/* Navigation Bar
+---------------------------------*/
+nav {
+	background: #DDA713;
+	padding: 1vw;
+}
+.navigation {
+	font-family: 'Oswald', sans-serif;
+	list-style-type: none;
+	max-width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.navigation a {
+  	color: #0D1B2A;
+  	text-decoration: none;
+}
+.navigation a:hover {
+	opacity: .5;
+}
+
+/* Contact Me
+---------------------------------*/
+footer {
+	background: #0D1B2A;
+  	color: #DDA713;
+	text-align: center;
+}
+footer h1 {
+	font-size: 16px;
+	padding: 2vw 0;
+}
+.contact-list li{
+	display: inline-block;
+	margin: 0 5vw;
+}
+.contact-list img {
+	max-width: 5vw;
+}
+footer div {
+	font-size: 1vw;
+	text-align: right;
+	color: black;
+	padding-right: 5px;
+}
+footer div a {
+	text-decoration: none;
+	color: inherit;
+}
+
 /* Main Page
 ---------------------------------*/
 header {
@@ -74,34 +116,24 @@ header {
   background-image: url("../images/mainbackground2.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  text-align: center;
 }
 header .content-wrap {
   padding: 250px 0;
+  color: #DDA713;
 }
-nav {
-  background: #231123;
-  max-width: none;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
+header .content-wrap h1 {
+	display: inline-block;
 }
-.navigation, .self-description {
+.self-description {
   list-style-type: none;
   padding: 0;
-}
-.navigation a {
-  padding: 15px 18px;
+  background-color: rgba(13, 27, 42, .9);
   display: inline-block;
 }
 .self-description li {
   display: inline-block;
-  padding: 0 10px;
-  border-style: solid;
-  border-color: White;
-  border-width: 0 2px;
-  margin: 20px -4px 0;
+  padding: 1vw;
   line-height: 1;
 }
 .self-description > li:first-of-type {
@@ -167,7 +199,8 @@ nav {
 /* Volunteering
 ---------------------------------*/
 .volunteer {
-  background: #F7F7FF;
+  background: #BFD7EA;
+  color: #1F242C;
 }
 
 /* Education
@@ -232,22 +265,6 @@ nav {
   color: #F7F7FF;
 }
 
-
-/* Contact Me
----------------------------------*/
-footer {
-  background: #231123;
-  color: #F7F7FF;
-}
-.contact-list {
-  list-style-type: none;
-  padding: 0;
-}
-.contact-list a {
-  padding: 15px;
-  display: inline-block;
-}
-
 /* Resume
 ---------------------------------*/
 
@@ -261,6 +278,7 @@ footer {
     column-gap: 20px;
   }
 }
+/*
 @media screen and (max-width: 799px){
   h1 {
     font-size: 60px;
@@ -271,7 +289,7 @@ footer {
     line-height: 1;
   }
 }
-@media screen and (min-width: 900px){
+ @media screen and (min-width: 900px){
   nav, header, footer {
       text-align: center;
   }
@@ -295,3 +313,4 @@ footer {
     padding: 30px 0;
   }
 }
+*/
