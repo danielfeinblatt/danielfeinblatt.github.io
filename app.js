@@ -1,4 +1,4 @@
-var html = `
+var htmlNavBar = `
 	<ul class="navigation">
 		<li><a href="index.html">Home</a></li>
 		<li><a href="volunteer.html">Volunteering</a></li>
@@ -10,5 +10,19 @@ var html = `
 		<li><a href="DanielFeinblattResume2020.pdf" target="_blank">Resume</a></li>
 	</ul>
 `;
+var htmlContactInfo = `
+	<h1>Would love to hear from you! Feel free to reach out via email or see what I'm up to on LinkedIn or GitHub.</h1>
+	<ul id="contact-me" class="contact-list">
+		<li><a href="mailto:danielfeinblatt@gmail.com"><img src="images/email-icon.png" alt=""></a></li>
+		<li><a href="https://danielfeinblatt.github.io/" target="_blank"><img src="images/github-logo.png" alt=""></a></li>
+		<li><a href="https://www.linkedin.com/in/danielfeinblatt/" target="_blank"><img src="images/linkedin-logo.png" alt=""></a></li>
+	</ul>
+	<div>
+	Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
+	from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+	</div>
+`;
 
-document.querySelector('nav').innerHTML = html
+
+document.querySelector('nav').innerHTML = htmlNavBar
+document.querySelector('footer').innerHTML = htmlContactInfo
