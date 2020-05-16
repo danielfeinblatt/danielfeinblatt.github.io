@@ -76,6 +76,10 @@ nav {
   	color: #0D1B2A;
   	text-decoration: none;
 }
+.navigation a.active {
+	background-color: #4CAF50;
+	color: #ffffff;
+}
 .navigation a:hover {
 	opacity: .5;
 }
