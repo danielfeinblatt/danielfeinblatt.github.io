@@ -81,7 +81,7 @@ nav {
 	color: #ffffff;
 }
 .navigation a:hover {
-	opacity: .5;
+	box-shadow: 5px 5px 5px 5px black;
 }
 
 /* Contact Me
@@ -115,6 +115,7 @@ footer div a {
 
 /* Main Page
 ---------------------------------*/
+
 header {
   padding-top: 10px;
   background-image: url("../images/mainbackground2.png");

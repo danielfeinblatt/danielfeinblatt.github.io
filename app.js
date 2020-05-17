@@ -24,5 +24,24 @@ var htmlContactInfo = `
 `;
 
 
-document.querySelector('nav').innerHTML = htmlNavBar
-document.querySelector('footer').innerHTML = htmlContactInfo
+document.querySelector('nav').innerHTML = htmlNavBar;
+document.querySelector('footer').innerHTML = htmlContactInfo;
+
+function getrelative() {
+	let full = document.location.href + "";
+	let orig = document.location.origin + "";
+	let rel = full.replace(orig, '').substring(1);
+	return rel;
+}
+const LISTOFLINKS = document.querySelectorAll('.navigation li a');
+function currentPage() {
+	for(var i = 0; i < LISTOFLINKS.length - 2; i++) {
+		let check = LISTOFLINKS[i].getAttribute('href');
+		if (getrelative() == check) {
+			LISTOFLINKS[i].style.color = 'white';
+			break;
+		}
+	}
+}
+
+this.addEventListener('load', currentPage);
