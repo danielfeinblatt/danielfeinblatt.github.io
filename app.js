@@ -23,7 +23,6 @@ var htmlContactInfo = `
 	</div>
 `;
 
-
 document.querySelector('nav').innerHTML = htmlNavBar;
 document.querySelector('footer').innerHTML = htmlContactInfo;
 
